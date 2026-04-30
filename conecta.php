@@ -9,7 +9,7 @@ try {
     // Criando uma instância PDO para conectar ao banco MySQL
     $conexao = new PDO("mysql:host=$host;dbname=$banco;charset=utf8", $usuario, $senha);
     
-    // Definindo o modo de erro para exceções0
+    // Definindo o modo de erro para exceções
     $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     echo "Conexão com o banco de dados realizada com sucesso!";
